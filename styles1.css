@@ -1,0 +1,32 @@
+
+
+.barra_de_navegación{
+    color: green;
+    display: flex;
+    align-items: center;
+    background-color: rgb(27, 16, 78);
+    padding: 0;
+}
+
+.barra_de_navegación h1{
+    margin: 0;
+    line-height: 0.8;    
+    padding: 4px;
+}
+
+.logo{
+    margin-right: 5px;
+    width: 120px;
+    height: auto;
+}
+
+.botones_de_navegación{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.botones_de_navegación h2{
+    margin-left: 0;        /* no funciona */
+    
+}
