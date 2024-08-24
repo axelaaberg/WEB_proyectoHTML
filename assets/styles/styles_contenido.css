@@ -1,0 +1,306 @@
+/*BARRA DE NAVEGACIÓN*/
+
+.barra_de_navegación{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;      
+    color: green;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.barra_de_navegación h2{
+    font-size: 30px;
+    margin: 0;
+    line-height: 0.8;    
+    padding: 4px;
+    margin: 0;
+}
+
+
+.marca{
+    display: flex;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.logo{
+    margin-right: 5px;
+    width: 120px;
+    height: auto;
+    
+}
+
+.botones_de_navegación{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.boton{
+    font-size: 17px;
+    color: green;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton_actual{
+    font-size: 17px;
+    color: green;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+.boton:hover{
+    background-color: beige;
+}
+
+.boton_actual:hover{
+    background-color: beige;
+}
+
+.boton:active {
+    background-color: rgba(245, 245, 220, 0.736); 
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); 
+    color: darkgreen; 
+}
+
+.boton_actual:active {
+    background-color: #d0d0d0; 
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); 
+    color: darkgreen; 
+}
+
+.oferta{
+    margin-right: 200px;
+}
+
+.boton_oferta {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    border: none;
+}
+
+.boton_oferta:hover {
+    background-color: darkgreen;
+   
+}
+
+.boton_oferta:active {
+    background-color: #d0d0d0;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); 
+    color: darkgreen; 
+}
+
+
+/* MAIN Y @MEDIA*/
+
+
+
+@media (max-width: 1200px) {
+    .marca {
+        margin-left: 20px; 
+    }
+
+    .botones_de_navegación {
+        display: none; 
+    }
+
+    .oferta {
+        margin-right: 20px; 
+    }
+
+    .boton_aprender{
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    
+}
+
+
+body{ 
+    overflow: auto;
+    margin: 0;
+    background-color: rgb(242, 242, 242);
+    background-attachment: fixed;
+}
+
+main{
+    margin-top: 150px;
+    
+}
+
+.grid-container {
+
+    display: grid;
+    column-gap: 50px;
+    row-gap: 10px;
+    background-color: transparent;
+    margin-left: 250px;
+    margin-right: 250px;
+
+
+  }
+  
+.grid-container > div {
+    background-color: transparent(95, 95, 165);
+    text-align: start;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+.espacio{
+    border-bottom: 1px solid grey;
+}
+
+.espacio input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+
+  
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-weight: bold;
+  }
+
+.item2, .item3, .item4, .item5, .item6{
+    margin-top: 25px;
+}
+
+
+.item6{
+    grid-column-start: 1;
+    grid-column-end: 3;
+   
+  }
+
+.item7{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.item8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+  }
+
+.boton_quien{
+    width: 20px;
+    height: 20px;
+}
+
+.boton_quien:active{
+    background-color: green;
+    
+}
+
+
+h1{
+    margin: 0;
+    font-size: 28px;
+
+}
+
+p{
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+
+
+.boton_enviar {
+    background-color: green;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px; 
+    border-radius: 20px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.boton_enviar:hover {
+    background-color: darkgreen;
+   
+}
+
+.boton_enviar:active {
+    background-color: #d0d0d0;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); 
+    color: darkgreen; 
+}
+
+
+
+/*FOOTER*/
+
+
+footer {
+    background-color: black;
+    padding-bottom: 20px;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    }
+    
+
+h3{
+    color: green;
+    margin-bottom: 5px;
+}
+
+.acceso_rapido {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0;
+    margin-inline-start: 200px;
+    margin-inline-end: 200px;
+
+}
+
+.boton_chico {
+    display: block; 
+    margin-top: 10px; 
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.boton_chico:active{
+    color: rgb(62, 62, 255);
+}
+
+
